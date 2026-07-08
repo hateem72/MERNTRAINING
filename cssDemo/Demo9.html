@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+       
+       background-color:yellow;
+       margin: 10px;
+       height: 100px;
+    }
+    #d1{
+       
+       background-color:green;
+       color:white;
+    }
+    #d2{
+       
+       background-color:ORANGE;
+       color:white;
+       display:none;
+    }
+    #d3{
+       
+       background-color:pink;
+       color:white;
+    }
+    #d1:hover+#d2{
+       
+            display:block;
+        
+    }
+    #d2:hover{
+        background-color:blue;
+       
+        border: 2px solid red;
+        box-shadow: 2px 2px 4px blue, -2px -2px 4px red;
+    }
+</style>
+<body>
+    <div id="d1">my div 1</div>
+    <div id="d2">my div 2</div>
+    <div id="d3">my div 3</div>
+</body>
+</html>
