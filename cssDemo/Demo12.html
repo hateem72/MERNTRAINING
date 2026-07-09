@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    input:not(#mybtn){
+        margin: 10px;
+        background-color: aquamarine;
+    }
+    input:focus{
+        background-color: lightblue;
+       border: 5px solid red;
+    }
+    /* input:valid{
+        border: 30px solid green;
+    }
+    input:invalid{
+        border: 30ox solid pink;
+    } */
+    /* input:user-valid{
+        border: 30px solid green;
+    }
+    input:user-invalid{
+        border: 30ox solid rgb(60, 0, 0);
+    } */
+  </style>
+<body>
+    <form method="post" action="/submit">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="5" required><br><br>
+        <input type="submit" id="mybtn" value="Submit">
+        </form>
+</body>
+</html>
