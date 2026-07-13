@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 1px solid red;
+        height:100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #d1{
+        height:160px;
+        width:160px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+        transition: 0.5s;
+    }
+    #d1:hover{
+        background-color:red;
+        /* transform: scale(1.2,1.2); */
+        /* transform: translate(160px,160px); */
+        /* transform:rotate(34deg); */
+        transform:skew(20deg)
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="d1">mydiv</div>
+    </div>
+</body>
+</html>
