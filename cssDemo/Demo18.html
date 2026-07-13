@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border:2px solid red;
+        height:600px;
+        display:flex;
+    }
+    .container>div{
+          
+          background-color:bisque;
+           display: flex;
+           align-items: center;  
+           justify-content: center;
+          
+          height:100px;
+          width:100px;
+          
+    }
+    .container> div:nth-child(even){
+      
+       background-color: aquamarine;
+     
+    }
+    #d1{
+        flex-grow: 1;
+           flex-basis: 50%;
+    }
+    #d2{
+        flex-grow: 1;
+     
+    }
+    #d3{
+       flex-grow: 1;
+    }
+    #d4{
+        flex-grow: 1;
+    }
+</style>
+<body>
+    <div class="container">
+    <div id="d1">MyDiv1</div>
+    <div id="d2">MyDiv2</div>
+    <div id="d3">MyDiv3</div>
+    <div id="d4">MyDiv4</div>
+    </div>
+</body>
+</html>

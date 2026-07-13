@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        height:100vh;
+       width:100vw;
+       background-color:yellow;
+       display:flex;
+       flex-direction: column;
+       justify-content:space-between;
+      }
+     .container>header{
+        background-color:brown;
+        height:50px;
+     }
+     #main{
+        display:flex;
+        flex-direction: row;
+        flex:1;
+        
+     }
+     #main>aside{
+        background-color:lightblue;
+        height:100%;
+        flex-grow:1 ;
+     }
+     content{
+         background-color:lightcoral;
+        height:100%;
+        order:2;
+        flex-grow:2;
+     }
+     #aside-left{
+        order: 1;
+     }
+   
+
+     #aside-right{
+        order: 3;
+     }
+      footer{
+        background-color: blue;
+        height:30px;
+      }
+    @media all and (min-width:768px) and (max-width:991px){
+         #main{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        
+     }
+    
+     content{
+       
+        order:1;
+        flex:0 0 100%;
+     }
+     #aside-left{
+        flex:1 0 50%;
+        order: 2;
+     }
+   
+
+     #aside-right{
+         flex:1 0 50%;
+        order: 2;
+     }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>myheader</header>
+      <div id="main">
+        <aside id="aside-left">
+         my left aside
+        </aside>
+        <aside id="aside-right">
+        my right aside
+        </aside>
+        <content >
+       content
+        </content>
+        </div>
+        <footer>myFooter</footer>
+    </div>
+</body>
+</html>
