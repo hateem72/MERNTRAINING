@@ -5,33 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     
-    <title>Document</title>
+    <title>carousel</title>
 </head>
-<script>
-  .carousel-item>img{
-    width:100%;
-    height:435px;
-    
-  }
-</script>
+<style>
+ .carousel-item > img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; 
+ }
+
+</style>
 <body>
  
   <div class="container mt-3">
-   <div class="carousel slide" data-ride="carousel">
+   <div class="carousel slide" data-ride="carousel" data-interval="100" data-pause="off" data-touch="false" id="myCarousel">
     <div class="carousel-inner">
 
       <div class="carousel-item active">
-        <img src="../images/image.png" alt="">
+        <img src="../images/image2.png" alt="">
       </div>
      
       <div class="carousel-item">
-        <img src="../images/image2.png" alt="">
+        <img src="../images/image5.png" alt="">
       </div>
       
       <div class="carousel-item">
         <img src="../images/image3.png" alt="">
       </div>
+      <div class="carousel-item">
+        <img src="../images/image4.png" alt="">
+      </div>
+    <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
 
+    <ul class="carousel-indicators">
+      <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+     
+    </ul>
     </div>
    </div>
 
